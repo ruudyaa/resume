@@ -1,0 +1,105 @@
+:root {
+  --not-underlined: none;
+  --flex: flex;
+  --center: center;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --primary-color: #273469;
+  --secondary-color: #e4d9ff;
+  --additional-color: #ffffff;
+  --text-color: #30343f;
+}
+
+body {
+  margin: 50px auto;
+}
+
+.email-link {
+  text-decoration: var(--not-underlined);
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 100px;
+  display: var(--flex);
+  justify-content: var(--center);
+  color: var(--text-color);
+  margin: 0;
+}
+
+h3 {
+  display: var(--flex);
+  justify-content: var(--center);
+  color: var(--text-color);
+  margin: 0;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+h2 {
+  font-size: 50px;
+  color: var(--text-color);
+}
+
+.header {
+  margin-top: 100px;
+}
+
+.links,
+.email-link,
+.back {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  margin-top: 40px;
+}
+
+.email-link,
+.back {
+  color: var(--primary-color);
+}
+
+.paragraphs {
+  display: flex;
+  margin: 40px;
+  text-align: center;
+}
+
+.about-paragraphs p {
+  margin: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.links a {
+  margin: 20px;
+  padding: 20px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.contact {
+  color: var(--text-color);
+  background: var(--primary-color);
+  color: var(--additional-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+}
+
+.about {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.navbar-logo {
+  display: block;
+  margin: 30px auto;
+  width: 150px;
+}
