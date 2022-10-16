@@ -15,7 +15,11 @@ body {
 
 .email-link {
   text-decoration: var(--not-underlined);
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
   font-size: 25px;
+  text-decoration: none;
 }
 
 h1 {
@@ -38,6 +42,10 @@ h3 {
 h2 {
   font-size: 50px;
   color: var(--text-color);
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .header {
@@ -102,4 +110,38 @@ p {
   display: block;
   margin: 30px auto;
   width: 150px;
+}
+
+@media (max-width: 576px) {
+  /* .container,
+  .container-md {
+    max-width: 540px;
+  } */
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  .contact {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .email-link {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  p {
+    text-align: center;
+  }
 }
